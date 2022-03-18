@@ -5,12 +5,13 @@ Vue.config.productionTip = false;
 
 /** AXIOS */
 import axios from "axios";
+axios.defaults.timeout = 100000;
 Vue.prototype.$axios = axios;
 
 /** VUEX */
-import Vuex from "vuex";
-Vue.use(Vuex);
+import store from "./vuex/store";
 
 new Vue({
+    store,
     render: (h) => h(App),
 }).$mount("#app");

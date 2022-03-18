@@ -1,5 +1,5 @@
 var express = require("express");
-var router = require(express.Router());
+var router = express.Router();
 
 const Constants = require("../modules/Constants");
 
@@ -17,3 +17,5 @@ router.get("/sample", function (req, res, next) {
         res.send(JSON.stringify(ret));
     });
 });
+
+module.exports = router;
