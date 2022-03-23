@@ -11,7 +11,6 @@
 
 ### backend : express --view=pug backend
 
-1.  npm i express --save : node express npm install
 2.  npm i nodemon --save
 3.  npm i cors --save
 
@@ -51,7 +50,8 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 ```
 
-3.  npm i ant-design-vue
+3.  npm i ant-design-vue --save
+    npm i ant-design --save
 
 ```javascript
 // main.js

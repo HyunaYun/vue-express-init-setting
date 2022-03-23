@@ -10,6 +10,12 @@ Vue.prototype.$axios = axios;
 // vuex
 import store from "./vuex/store";
 
+// ant-design
+import Antd from "ant-design-vue";
+import "ant-design-vue/dist/antd.css";
+
+Vue.use(Antd);
+
 new Vue({
     store,
     render: (h) => h(App),
