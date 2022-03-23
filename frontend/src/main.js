@@ -3,12 +3,11 @@ import App from "./App.vue";
 
 Vue.config.productionTip = false;
 
-/** AXIOS */
+// axios
 import axios from "axios";
-axios.defaults.timeout = 100000;
 Vue.prototype.$axios = axios;
 
-/** VUEX */
+// vuex
 import store from "./vuex/store";
 
 new Vue({
