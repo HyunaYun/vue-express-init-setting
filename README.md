@@ -8,11 +8,12 @@
 2. Express js : v4.16.1
 3. Vue js : v2
 4. @vue/cli : v4.5.13
+5. vuex : v3.0.0
 
 ### backend : express --view=pug backend
 
-2.  npm i nodemon --save
-3.  npm i cors --save
+1.  npm i nodemon --save
+2.  npm i cors --save
 
 ```javascript
 // app.js
@@ -48,6 +49,16 @@ axios.defaults.timeout = 100000;
 import Vuex from "vuex";
 
 Vue.use(Vuex);
+
+// store 에서 vuex import 했을 경우
+// main.js
+
+import store from "./vuex/store";
+
+new Vue({
+    store,
+    render: (h) => h(App),
+}).$mount("#app");
 ```
 
 3.  npm i ant-design-vue --save
