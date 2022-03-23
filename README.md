@@ -62,7 +62,7 @@ new Vue({
 ```
 
 3.  npm i ant-design-vue --save
-    npm i ant-design --save
+4.  npm i ant-design --save
 
 ```javascript
 // main.js
